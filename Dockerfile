@@ -3,7 +3,7 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 # Supported base images: Ubuntu 24.04, 22.04, 20.04
-ARG IMAGE_SOURCE=docker.1panel.live
+ARG IMAGE_SOURCE=docker.1ms.run
 
 # 2. 定义镜像名称和版本
 ARG DISTRIB_IMAGE=library/ubuntu
