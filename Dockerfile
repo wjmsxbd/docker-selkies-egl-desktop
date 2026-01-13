@@ -5,7 +5,7 @@
 # Supported base images: Ubuntu 24.04, 22.04, 20.04
 ARG DISTRIB_IMAGE=ubuntu
 ARG DISTRIB_RELEASE=24.04
-FROM registry.cn-shanghai.aliyuncs.com/tcc-public/ubuntu:24.04
+FROM registry.cn-shanghai.aliyuncs.com/docker-mirror/ubuntu:24.04
 ARG DISTRIB_IMAGE
 ARG DISTRIB_RELEASE
 
