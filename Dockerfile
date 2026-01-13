@@ -3,9 +3,15 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 # Supported base images: Ubuntu 24.04, 22.04, 20.04
-ARG DISTRIB_IMAGE=ubuntu
+ARG IMAGE_SOURCE=docker.1panel.live
+
+# 2. 定义镜像名称和版本
+ARG DISTRIB_IMAGE=library/ubuntu
 ARG DISTRIB_RELEASE=24.04
-FROM ${DISTRIB_IMAGE}:${DISTRIB_RELEASE}
+
+# 3. 组合成完整的 FROM 路径
+# 注意：使用代理源时，通常需要加上 /library/ 前缀（针对官方镜像）
+FROM ${IMAGE_SOURCE}/${DISTRIB_IMAGE}:${DISTRIB_RELEASE}
 ARG DISTRIB_IMAGE
 ARG DISTRIB_RELEASE
 
